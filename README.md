@@ -1,6 +1,6 @@
 # BlockchainConcurrente
 
 Repositorio para la clase de hoy.
- ```c++
+ ```c++ .go
  go run codigoFacilito.go
  ```
