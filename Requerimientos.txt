@@ -1,0 +1,43 @@
+Anotacion de sintomas y medicamentos
+Diagnostico
+poder registrar medicamentos y procedimientos
+
+Crear Historia CLinica (HC)
+Registrar{
+	ATencion
+	Pronostico
+	Diagnostico
+	Medicacion
+	procedimientos
+}
+
+-> fecha y nombre
+
+Datos paciente
+	Atencion 1
+	Fecha - HOspital - Doctor
+	Pronosctico -> Dolor cabeza
+	Diagnostico -> MIgraña
+	Medicamentos -> Aspirina
+	Procedimeintos -> -----
+
+	Atencion 2
+	Fecha - HOspital - Doctor
+	Pronosctico -> Dolor cabeza
+	Diagnostico -> MIgraña
+	Medicamentos -> Aspirina
+	Procedimeintos -> -----
+
+	
+
+- Ser primer nodo
+- Conectar con otro nodo
+	Distribuir nombres
+	Recibir ledgers
+- Editar ledgers
+	Enviar cambio a todos los nodos
+	Calcular hash -> Enviar hash
+	Verificar concenso
+	Reoptener ledgers
+
+
