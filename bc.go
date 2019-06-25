@@ -86,20 +86,24 @@ func cliRegister(id, targetId int, chId chan<- int) {
 }
 
 func main() {
+    func main() {
     chId := make(chan int)
     end := make(chan int)
     go ipAdder(chId)
     id := 0
     fmt.Print("Ingresa tu Port: ")
-    fmt.Scanf("%d", &id)
+    fmt.Scanf("%d\n", &id)
     go servAdder(id, chId)
-    go servRegister(id, chId, end)
-    friend := 0
+	go servRegister(id, chId, end)
+	
+	friend := 0
     fmt.Print("Ingresa tu friend Port: ")
-    fmt.Scanf("%d", &friend)
+	fmt.Scanf("%d\n", &friend)
+
     if id != friend {
         chId<- friend
         cliRegister(id, friend, chId)
     }
     <-end
+}
 }
