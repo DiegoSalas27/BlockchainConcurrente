@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Historias Clínicas App - Registro</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/navbar-top.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <a class="navbar-brand" href="#">Historias Clínicas App</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Lista <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="registro.html">Registro</a>
+                </li>
+            </ul>
+        </div>
+        <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+            <li class="nav-item dropdown">
+                <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="host-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Hosts
+          </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="host-versions">
+                    <a class="dropdown-item active" href="#" value="http://f2159382.ngrok.io/historiasclinicas">Manuel</a>
+                    <a class="dropdown-item" href="#" value="http://c0437b82.ngrok.io/historiasclinicas">Diego Salas</a>
+                    <a class="dropdown-item" href="#" value="http://e96297a8.ngrok.io/historiasclinicas">Diego Johnson</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main role="main" class="container">
+        <h1>Nueva historia clínica</h1>
+        <form action="http://f2159382.ngrok.io/historiasclinicas" method="post" id="registro">
+            <div class="form-group">
+                <label for="nombre">año</label>
+                </br>
+                <input class="form-control" type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12" min="2018-06-07" max="2018-06-14">
+            </div>
+            <div class="form-group">
+                <label for="edad">atencion</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="hospital" placeholder="hospital" name="hospital">
+                    <input type="text" class="form-control" id="doctor" placeholder="doctor" name="doctor">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="peso">prognosis</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="prognosis" placeholder="prognosis" name="prognosis">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="peso">diagnosis</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="diagnosis" placeholder="diagnosis" name="diagnosis">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="peso">medicamento</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="medicamento" placeholder="medicamento" name="medicamento">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="peso">procedimiento</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="procedimiento" placeholder="procedimiento" name="procedimiento">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrar</button>
+        </form>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/registro.js"></script>
+</body>
+
+</html>
